@@ -24,7 +24,7 @@ jobs:
 
     - name: Gerar Executavel
       run: |
-        pyinstaller --noconfirm --onedir --windowed --add-data "database.py;." app.py
+        pyinstaller --noconfirm --onefile --windowed --add-data "database.py;." app.py
 
     - name: Disponibilizar Build (Artifacts)
       uses: actions/upload-artifact@v4
