@@ -24,7 +24,7 @@ jobs:
 
     - name: Gerar Executavel
       run: |
-        pyinstaller --noconfirm --onefile --windowed --add-data "database.py;." app.py
+        pyinstaller --noconfirm --onefile --name "Controle Minestar 3.0" --add-data "database.py;." app.py
 
     - name: Disponibilizar Build (Artifacts)
       uses: actions/upload-artifact@v4
