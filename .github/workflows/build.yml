@@ -26,8 +26,8 @@ jobs:
       run: |
         pyinstaller --noconfirm --onefile --name "Controle Minestar 3.0" --add-data "database.py;." app.py
 
-    - name: Disponibilizar Build (Artifacts)
+    - name: Upload Artifact
       uses: actions/upload-artifact@v4
       with:
-        name: Sistema_Monitoramento_Mina
-        path: dist/app
+        name: Controle-Minestar-Executavel
+        path: dist/Controle Minestar 3.0.exe
