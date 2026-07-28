@@ -24,7 +24,7 @@ jobs:
 
     - name: Gerar Executavel
       run: |
-        pyinstaller --noconfirm --onefile --name "Controle Minestar 3.0" --add-data "database.py;." app.py
+        pyinstaller --noconfirm --onefile --name "Controle Minestar 3.0" --copy-metadata streamlit --add-data "database.py;." app.py
 
     - name: Upload Artifact
       uses: actions/upload-artifact@v4
